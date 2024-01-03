@@ -14,15 +14,19 @@ export default function About() {
           <i className="fa-solid fa-plus fa-fw"></i>
           <img className="w-8 mx-auto" src={REACT_LOGO} alt="react-logo" />
           <i className="fa-solid fa-plus fa-fw"></i>
-          <img className="w-8 mx-auto" src={TAILWINDCSS_LOGO} alt="tailwind-logo" />
+          <img
+            className="w-8 mx-auto"
+            src={TAILWINDCSS_LOGO}
+            alt="tailwind-logo"
+          />
         </div>
       </div>
       <p className="mt-2">
-        <code className="py-1 bg-gray-200">src/views/About.jsx</code>
+        <code className="py-1 bg-gray-200">src/views/HowTo.jsx</code>
       </p>
 
       <div className="mt-8 mb-12">
-        <ul className="list-disc list-inside space-y-2">
+        <ul className="ml-3 list-disc list-outside space-y-2">
           <li>
             This repo is a scaffolding of <strong>Vite</strong>,{" "}
             <strong>React</strong> and <strong>Tailwind CSS</strong>.
@@ -36,7 +40,26 @@ export default function About() {
             <code className="bg-gray-200">index.html</code>
           </li>
           <li>
-            Font included: <strong>Inter</strong> (Free font for personal / commercial use).
+            <span>
+              Font included: <strong>Inter</strong> (Free font for personal /
+              commercial use).
+            </span>
+            <br />
+            <a
+              className="mt-2 text-blue-500 hover:text-blue-700 hover:underline"
+              href="https://rsms.me/inter/"
+              target="_blank"
+            >
+              https://rsms.me/inter
+            </a>
+          </li>
+          <li>
+            <span className="text-green-800 bg-green-100">Node v18.16.0</span>{" "}
+            is supported.
+          </li>
+          <li>
+            Last updated on{" "}
+            <code className="bg-gray-200">1st January 2024</code>
           </li>
         </ul>
       </div>
@@ -46,6 +69,12 @@ export default function About() {
         className="py-2 px-4 text-center no-underline text-pink-400 border border-pink-200 hover:border-pink-300 hover:bg-pink-50 shadow-sm hover:shadow rounded-md duration-200"
       >
         <i className="fa-solid fa-home fa-fw fa-lg"></i>
+      </Link>
+      <Link
+        to="/how-to"
+        className="py-2 px-4 text-center no-underline text-pink-400 border border-pink-200 hover:border-pink-300 hover:bg-pink-50 shadow-sm hover:shadow rounded-md duration-200"
+      >
+        <i className="fa-solid fa-gears fa-fw fa-lg"></i>
       </Link>
     </div>
   );
