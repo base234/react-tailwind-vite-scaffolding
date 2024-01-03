@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
-import REACT_LOGO from "@assets/react.svg";
 import VITE_LOGO from "@assets/vite.svg";
+import REACT_LOGO from "@assets/react.svg";
+import TAILWINDCSS_LOGO from "@assets/tailwindcss.svg";
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
           <i className="fa-solid fa-plus fa-fw"></i>
           <img className="w-8 mx-auto" src={REACT_LOGO} alt="react-logo" />
           <i className="fa-solid fa-plus fa-fw"></i>
-          <img className="w-8 mx-auto" src={REACT_LOGO} alt="tailwind-logo" />
+          <img className="w-8 mx-auto" src={TAILWINDCSS_LOGO} alt="tailwind-logo" />
         </div>
       </div>
       <p className="mt-2">
@@ -35,7 +36,7 @@ export default function About() {
             <code className="bg-gray-200">index.html</code>
           </li>
           <li>
-            Font included: <strong>Inter</strong> (Free font for personal/commercial).
+            Font included: <strong>Inter</strong> (Free font for personal / commercial use).
           </li>
         </ul>
       </div>

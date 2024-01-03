@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import REACT_LOGO from "@assets/react.svg";
 import VITE_LOGO from "@assets/vite.svg";
+import TAILWINDCSS_LOGO from "@assets/tailwindcss.svg";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <i className="fa-solid fa-plus fa-fw"></i>
         <img className="w-12 mx-auto" src={REACT_LOGO} alt="react-logo" />
         <i className="fa-solid fa-plus fa-fw"></i>
-        <img className="w-12 mx-auto" src={REACT_LOGO} alt="tailwind-logo" />
+        <img className="w-12 mx-auto" src={TAILWINDCSS_LOGO} alt="tailwind-logo" />
       </div>
       <div className="flex justify-center gap-4">
         <Link
