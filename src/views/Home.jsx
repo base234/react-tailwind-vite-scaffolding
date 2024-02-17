@@ -18,14 +18,24 @@ export default function Home() {
         <i className="fa-solid fa-plus fa-fw"></i>
         <img className="w-12 mx-auto" src={REACT_LOGO} alt="react-logo" />
         <i className="fa-solid fa-plus fa-fw"></i>
-        <img className="w-12 mx-auto" src={TAILWINDCSS_LOGO} alt="tailwind-logo" />
+        <img
+          className="w-12 mx-auto"
+          src={TAILWINDCSS_LOGO}
+          alt="tailwind-logo"
+        />
       </div>
       <div className="flex justify-center gap-4">
         <Link
           to="/about"
           className="py-2 px-4 text-center no-underline text-pink-400 border border-pink-200 hover:border-pink-300 hover:bg-pink-50 shadow-sm hover:shadow rounded-md duration-200"
         >
-          ... <i className="fa-solid fa-question-circle fa-fw fa-lg"></i>
+          <i className="fa-solid fa-info-circle fa-fw fa-lg"></i>
+        </Link>
+        <Link
+          to="/how-to"
+          className="py-2 px-4 text-center no-underline text-pink-400 border border-pink-200 hover:border-pink-300 hover:bg-pink-50 shadow-sm hover:shadow rounded-md duration-200"
+        >
+          <i className="fa-solid fa-gears fa-fw fa-lg"></i>
         </Link>
       </div>
     </div>
