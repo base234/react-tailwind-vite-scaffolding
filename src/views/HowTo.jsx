@@ -4,6 +4,9 @@ import REACT_LOGO from "@assets/react.svg";
 import VITE_LOGO from "@assets/vite.svg";
 import TAILWINDCSS_LOGO from "@assets/tailwindcss.svg";
 
+import IMG_IMPORT_PATH_HELL from "@assets/import_path_hell.svg";
+import IMG_CLEAN_IMPORT from "@assets/clean_import.svg";
+
 export default function HowTo() {
   return (
     <div className="mt-10 max-w-2xl mx-auto">
@@ -32,7 +35,7 @@ export default function HowTo() {
           with increasing folder depth.
         </p>
 
-        <p className="my-8">Image Here of import path hell.</p>
+        <img className="w-full h-auto" src={IMG_IMPORT_PATH_HELL} />
 
         <p className="mt-2 text-gray-600">
           These are <strong>relative imports</strong>.
@@ -69,6 +72,7 @@ export default function HowTo() {
           <p className="mt-4 text-gray-600">
             This looks much better, cleaner and improves code readability.
           </p>
+          <img className="w-full h-auto" src={IMG_CLEAN_IMPORT} />
         </div>
       </div>
 
@@ -122,6 +126,14 @@ export default function HowTo() {
           </li>
           <li>
             <strong>@views</strong> -{" "}
+            <span className="text-gray-600">
+              {" "}
+              access <code className="text-black bg-gray-200"> views</code>{" "}
+              directory
+            </span>
+          </li>
+          <li>
+            <strong>@contexts</strong> -{" "}
             <span className="text-gray-600">
               {" "}
               access <code className="text-black bg-gray-200"> views</code>{" "}
